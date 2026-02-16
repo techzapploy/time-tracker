@@ -313,7 +313,23 @@ This application includes a comprehensive set of pages organized by functionalit
 
 ### Prerequisites
 
-(To be added based on project stack)
+Before you begin, ensure you have the following installed on your development machine:
+
+- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
+- **npm** (v9 or higher) or **yarn** (v1.22 or higher) - Package manager
+- **PostgreSQL** (v14 or higher) - [Download](https://www.postgresql.org/download/)
+- **Redis** (v7 or higher) - [Download](https://redis.io/download/)
+- **Git** - [Download](https://git-scm.com/downloads)
+- **Docker** (optional, recommended for development) - [Download](https://www.docker.com/get-started)
+
+### Recommended Tools
+
+- **VS Code** with extensions:
+  - ESLint
+  - Prettier
+  - TypeScript and JavaScript Language Features
+  - Tailwind CSS IntelliSense
+  - Prisma (if using Prisma ORM)
 
 ### Installation
 
@@ -368,7 +384,125 @@ cd time-tracker
 
 ## Technologies
 
-(Technology stack to be documented)
+This project uses a modern, scalable technology stack designed for performance, maintainability, and developer experience.
+
+### Frontend
+
+- **Framework**: React 18+ with TypeScript
+  - Type-safe development with comprehensive IDE support
+  - Component-based architecture for reusability
+  - Hooks for state management and side effects
+
+- **State Management**:
+  - Redux Toolkit for global application state
+  - React Query for server state management and caching
+  - Context API for theme and localization
+
+- **UI Components & Styling**:
+  - Tailwind CSS for utility-first styling
+  - Radix UI or shadcn/ui for accessible component primitives
+  - Framer Motion for animations and transitions
+  - React Hook Form for form management and validation
+
+- **Build Tools**:
+  - Vite for fast development and optimized production builds
+  - ESLint and Prettier for code quality and formatting
+  - TypeScript compiler for type checking
+
+- **Routing**: React Router v6 for client-side navigation
+
+- **Date/Time Handling**: date-fns or Day.js for date manipulation and formatting
+
+- **Charts & Visualization**: Recharts or Chart.js for reports and analytics
+
+### Backend
+
+- **Runtime**: Node.js (LTS version)
+- **Framework**: Express.js or NestJS
+  - RESTful API design
+  - Middleware support for authentication, validation, and error handling
+  - TypeScript support for type safety
+
+- **Database**:
+  - PostgreSQL for primary data storage
+    - Relational data model for users, projects, time entries
+    - JSONB support for flexible metadata
+    - Full-text search capabilities
+  - Redis for caching and session management
+
+- **ORM**: Prisma or TypeORM
+  - Type-safe database queries
+  - Migration management
+  - Database schema versioning
+
+- **Authentication & Authorization**:
+  - JWT (JSON Web Tokens) for stateless authentication
+  - Passport.js for OAuth integration (Google, Microsoft)
+  - bcrypt for password hashing
+  - Role-Based Access Control (RBAC)
+
+- **API Documentation**:
+  - OpenAPI/Swagger for API specification
+  - Auto-generated documentation from code
+
+- **Background Jobs**:
+  - Bull or BullMQ with Redis for queue management
+  - Scheduled tasks for reports, notifications, and data aggregation
+
+- **File Storage**:
+  - AWS S3 or compatible object storage for receipts and exports
+  - Multer for file upload handling
+
+- **Email**:
+  - SendGrid or AWS SES for transactional emails
+  - Email templates with Handlebars or React Email
+
+### Mobile (Optional Future Enhancement)
+
+- **Framework**: React Native or Flutter
+  - Cross-platform support (iOS and Android)
+  - Shared business logic with web application
+  - Native features: GPS tracking, notifications, offline support
+
+### Infrastructure & DevOps
+
+- **Containerization**: Docker for consistent development and deployment environments
+- **Orchestration**: Docker Compose for local development, Kubernetes for production (optional)
+- **CI/CD**: GitHub Actions for automated testing and deployment
+- **Monitoring & Logging**:
+  - Winston or Pino for structured logging
+  - Sentry for error tracking
+  - Prometheus + Grafana for metrics (optional)
+- **Testing**:
+  - Jest for unit and integration tests
+  - React Testing Library for component testing
+  - Playwright or Cypress for end-to-end testing
+  - Supertest for API testing
+
+### Third-Party Integrations
+
+- **Calendar**: Google Calendar API, Microsoft Graph API
+- **Project Management**: Jira API, Trello API, Asana API
+- **Accounting**: QuickBooks API, Xero API
+- **Communication**: Slack API, Microsoft Teams API
+- **Webhooks**: Custom webhook system for real-time notifications
+
+### Development Tools
+
+- **Version Control**: Git with GitHub
+- **Code Editor**: VS Code (recommended) with extensions for TypeScript, ESLint, Prettier
+- **API Testing**: Postman or Insomnia
+- **Database Management**: pgAdmin or DBeaver for PostgreSQL
+
+### Security
+
+- **HTTPS**: TLS/SSL encryption for all communication
+- **CORS**: Configured cross-origin resource sharing
+- **Rate Limiting**: Express Rate Limit or similar
+- **Input Validation**: Joi or Zod for schema validation
+- **SQL Injection Prevention**: Parameterized queries via ORM
+- **XSS Protection**: Content Security Policy headers, output sanitization
+- **CSRF Protection**: CSRF tokens for state-changing operations
 
 ## Contributing
 
