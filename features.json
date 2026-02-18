@@ -1,0 +1,1616 @@
+[
+  {
+    "category": "functional",
+    "description": "Real-time timer that tracks time as it passes.",
+    "steps": [
+      "Click \"Start\" to begin tracking time",
+      "Select project, task, tags, and add description before or during tracking",
+      "Click \"Stop\" to end time entry",
+      "Confirm message appears: \"Timer started\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Manually log time entries after work is completed.",
+    "steps": [
+      "Enter start time and end time manually",
+      "Execute action: Or enter total duration (e.g., \"2h 30m\")",
+      "Select date for the entry",
+      "Confirm message appears: \"Time entry created successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Visual timeline view of tracked time displayed as color-coded blocks.",
+    "steps": [
+      "View daily/weekly calendar with time blocks",
+      "Execute action: Drag time blocks to adjust start time",
+      "Execute action: Resize blocks to adjust duration",
+      "Confirm message appears: \"Time entry updated\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Spreadsheet-style interface for viewing and editing time entries.",
+    "steps": [
+      "View entries in tabular format by day/week/month",
+      "Execute action: Edit entries inline (click cell to modify)",
+      "Execute action: Bulk edit multiple entries",
+      "Confirm message appears: \"Timesheet submitted for approval\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Built-in Pomodoro technique timer for productivity.",
+    "steps": [
+      "Execute action: Set Pomodoro duration (default 25 minutes)",
+      "Execute action: Set break duration (short: 5min, long: 15min)",
+      "Execute action: Start Pomodoro session",
+      "Confirm message appears: \"Pomodoro session started - Focus for 25 minutes\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Shared device clock-in/clock-out interface with PIN authentication.",
+    "steps": [
+      "Execute action: Launch kiosk mode on tablet/computer",
+      "Select profile from user list",
+      "Enter 4-digit or 6-digit PIN",
+      "Confirm message appears: \"Clocked in successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatic monitoring of applications and websites used during work.",
+    "steps": [
+      "Execute action: Enable auto-tracker in desktop app (Windows/Mac)",
+      "Execute action: Apps and websites tracked automatically when timer running",
+      "Execute action: Review tracked apps in activity timeline",
+      "Confirm message appears: \"Auto-tracker enabled - Apps monitored when timer is running\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "performance",
+    "description": "Continue tracking time without internet connection.",
+    "steps": [
+      "Execute action: Track time normally when offline",
+      "Execute action: Activities stored locally on device",
+      "Execute action: Automatic sync when connection restored",
+      "Confirm message appears: \"Working offline - Changes will sync when online\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track break time for labor compliance and reporting.",
+    "steps": [
+      "Click \"Start Break\" to begin break period",
+      "Execute action: Break time tracked separately from work time",
+      "Execute action: \"End Break\" to resume work timer",
+      "Confirm message appears: \"Break started\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatic break periods when using Pomodoro timer.",
+    "steps": [
+      "Execute action: Enable Pomodoro timer with auto-breaks",
+      "Execute action: Break starts automatically after work session",
+      "Execute action: Option to skip break and continue working",
+      "Confirm message appears: \"Time for a 5-minute break!\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Divide a single time entry into multiple segments.",
+    "steps": [
+      "Select existing time entry",
+      "Click \"Split\" option",
+      "Execute action: Choose split point (time or percentage)",
+      "Confirm message appears: \"Time entry split successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Notifications to remind users to track time.",
+    "steps": [
+      "Execute action: Enable reminders in settings",
+      "Execute action: Set reminder interval (every X minutes)",
+      "Execute action: Choose notification type (desktop, email, both)",
+      "Confirm message appears: \"Reminder: Don't forget to track your time\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Context-aware reminders based on user behavior.",
+    "steps": [
+      "Execute action: System detects untracked time gaps",
+      "Execute action: Reminder triggered if timer not running during work hours",
+      "Execute action: Suggestion to fill in missing time",
+      "Confirm message appears: \"You haven't tracked time today - Start now?\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Detect and handle inactive periods during time tracking.",
+    "steps": [
+      "Execute action: Configure idle threshold (e.g., 10 minutes of inactivity)",
+      "Execute action: Choose default action: discard, keep, or ask",
+      "Execute action: Review idle time when detected",
+      "Confirm message appears: \"No activity detected for 10 minutes - What would you like to do?\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Set up projects to organize time tracking and resources.",
+    "steps": [
+      "Click \"Add Project\" button",
+      "Enter project name (required)",
+      "Select client (optional)",
+      "Confirm message appears: \"Project created successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Configure detailed project parameters.",
+    "steps": [
+      "Execute action: Set hourly rate for project",
+      "Execute action: Configure time estimate",
+      "Execute action: Set budget (time and/or money)",
+      "Confirm message appears: \"Project settings updated\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Organize projects under client entities.",
+    "steps": [
+      "Click \"Add Client\" button",
+      "Enter client name, email, address",
+      "Execute action: Add client notes",
+      "Confirm message appears: \"Client 'Acme Corp' created\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Generate client-specific reports and summaries.",
+    "steps": [
+      "View total time tracked per client",
+      "Execute action: See billable vs non-billable breakdown",
+      "Execute action: Generate client invoices",
+      "Confirm message appears: \"Total time for Acme Corp: 156 hours this month\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Break down projects into specific tasks.",
+    "steps": [
+      "Execute action: Add task to project",
+      "Enter task name and description",
+      "Execute action: Set task estimate",
+      "Confirm message appears: \"Task 'Homepage Design' added to project\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Organize tasks in parent-child relationships.",
+    "steps": [
+      "Execute action: Create subtasks under main tasks",
+      "Execute action: Indent/outdent tasks to adjust hierarchy",
+      "Execute action: Collapse/expand task groups",
+      "Confirm message appears: \"Subtask created under 'Website Redesign'\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Save project configurations as reusable templates.",
+    "steps": [
+      "Execute action: Create project with desired settings",
+      "Click \"Save as Template\"",
+      "Execute action: Name the template",
+      "Confirm message appears: \"Template 'Web Development Project' saved\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Create new projects from saved templates.",
+    "steps": [
+      "Click \"New Project from Template\"",
+      "Select template from library",
+      "Execute action: Customize project name and client",
+      "Confirm message appears: \"Project created from 'Web Development' template\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Custom labels for flexible categorization across projects.",
+    "steps": [
+      "Execute action: Create workspace-level tags",
+      "Execute action: Apply multiple tags to time entries",
+      "Execute action: Filter reports by tags",
+      "Confirm message appears: \"Tag 'Design' created and applied to 12 entries\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Add custom metadata to time entries for detailed tracking.",
+    "steps": [
+      "Execute action: Create custom fields (text, number, dropdown, link)",
+      "Execute action: Set field as required or optional",
+      "Execute action: Apply fields workspace-wide or per project",
+      "Confirm message appears: \"Custom field 'Mileage' created\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Control who can see and track time on projects.",
+    "steps": [
+      "Execute action: Set project as Public (all workspace members can see)",
+      "Execute action: Set project as Private (only assigned members can see)",
+      "Execute action: Assign specific team members to project",
+      "Confirm message appears: \"Project is public - All team members can track time\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Define who can manage project settings.",
+    "steps": [
+      "Execute action: Allow users to manage projects they created",
+      "Execute action: Restrict project creation to admins only",
+      "Execute action: Enable/disable task creation by regular users",
+      "Confirm message appears: \"Only admins can create new projects\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Quick access to frequently used projects.",
+    "steps": [
+      "Click star icon to favorite a project",
+      "Execute action: Favorited projects appear at top of list",
+      "Execute action: Sort projects by favorites first",
+      "Confirm message appears: \"Project added to favorites\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Hide completed projects from active views.",
+    "steps": [
+      "Execute action: Archive completed project",
+      "Execute action: Archived projects hidden from time tracker",
+      "Execute action: Archived projects remain in reports",
+      "Confirm message appears: \"Project archived - Hidden from time tracker but kept in reports\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "At-a-glance view of individual time tracking metrics.",
+    "steps": [
+      "View dashboard on login",
+      "Execute action: See current week's tracked time",
+      "View breakdown by project",
+      "Confirm message appears: \"You've tracked 32 hours this week\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Aggregated view of all workspace activity.",
+    "steps": [
+      "View team-wide time summary",
+      "Execute action: See who's tracking time right now",
+      "View project progress across team",
+      "Confirm message appears: \"Team tracked 240 hours this week\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Configure widgets and metrics displayed.",
+    "steps": [
+      "Execute action: Add/remove dashboard widgets",
+      "Execute action: Rearrange widget layout",
+      "Execute action: Set default time period (week/month)",
+      "Confirm message appears: \"Dashboard layout saved\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Aggregated view of tracked time with totals.",
+    "steps": [
+      "Execute action: Generate summary report",
+      "Execute action: Group by: project, client, user, tag, task",
+      "Execute action: Filter by date range",
+      "Confirm message appears: \"Summary generated: 25 projects, 156 total hours\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Line-by-line listing of all time entries.",
+    "steps": [
+      "View all individual time entries",
+      "Execute action: Filter by multiple criteria simultaneously",
+      "Execute action: Sort by date, project, duration",
+      "Confirm message appears: \"Showing 243 time entries\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Week-by-week breakdown of time tracking.",
+    "steps": [
+      "View time organized by calendar weeks",
+      "Execute action: See daily totals within each week",
+      "Execute action: Compare weeks over time",
+      "Confirm message appears: \"Week of Jan 15-21: 42 hours tracked\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "View scheduled/planned work vs actual tracked time.",
+    "steps": [
+      "Execute action: See assigned tasks per team member",
+      "Execute action: Compare scheduled hours to tracked hours",
+      "Execute action: Identify overallocation or underutilization",
+      "Confirm message appears: \"John scheduled 40h, tracked 35h (variance: -5h)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Clock-in/clock-out records for compliance tracking.",
+    "steps": [
+      "View clock-in and clock-out times",
+      "Execute action: See total work hours per day",
+      "Execute action: Track late arrivals and early departures",
+      "Confirm message appears: \"John Doe: Clocked in at 8:45 AM (15 min late)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track and report project expenses.",
+    "steps": [
+      "View all logged expenses",
+      "Execute action: Filter by project, date, expense type",
+      "Execute action: See billable vs non-billable expenses",
+      "Confirm message appears: \"Total expenses: $1,245.50 (18 items)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Narrow down report data by multiple criteria.",
+    "steps": [
+      "Click \"Filters\" to open filter panel",
+      "Select multiple filter criteria",
+      "Execute action: Save filter combinations as presets",
+      "Confirm message appears: \"5 filters applied (257 entries match)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Organize report data by different dimensions.",
+    "steps": [
+      "Select grouping dimension from dropdown",
+      "Execute action: Sub-group by secondary dimension",
+      "Execute action: Collapse/expand groups",
+      "Confirm message appears: \"Grouped by: Project → User\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Download report data in various formats.",
+    "steps": [
+      "Click \"Export\" button",
+      "Select format from dropdown",
+      "Execute action: Choose to include/exclude charts",
+      "Confirm message appears: \"Generating PDF export...\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Configure PDF appearance and content.",
+    "steps": [
+      "Execute action: Add company logo to PDF",
+      "Execute action: Customize color scheme",
+      "Execute action: Include/exclude specific columns",
+      "Confirm message appears: \"PDF customization saved\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Share live report via URL without requiring login.",
+    "steps": [
+      "Click \"Share\" button on report",
+      "Execute action: Toggle \"Public Access\" on",
+      "Execute action: Copy generated link",
+      "Confirm message appears: \"Public link created - Anyone with link can view\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatically email reports on recurring schedule.",
+    "steps": [
+      "Click \"Schedule\" button on report",
+      "Execute action: Choose frequency (daily, weekly, monthly)",
+      "Select recipients (email addresses)",
+      "Confirm message appears: \"Report scheduled: Weekly on Mondays at 9:00 AM\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Highest level of access with full workspace control.",
+    "steps": [
+      "Execute action: All admin capabilities plus exclusive owner functions",
+      "Execute action: Assign/remove admin roles",
+      "Execute action: Configure workspace-level integrations",
+      "Confirm message appears: \"You are the workspace owner\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "High-level access for workspace administration.",
+    "steps": [
+      "Execute action: Add team members to workspace",
+      "Execute action: Configure time tracking policies",
+      "Execute action: Set up approval workflows",
+      "Confirm message appears: \"You have admin access to this workspace\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Manages specific projects and their team members.",
+    "steps": [
+      "Execute action: Assign tasks within their projects",
+      "Execute action: Set project budgets and estimates",
+      "Execute action: Review and approve time entries for project",
+      "Confirm message appears: \"You manage 3 projects\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Manages specific team members across all projects.",
+    "steps": [
+      "Execute action: Review team timesheets",
+      "Execute action: Approve or reject time submissions",
+      "Execute action: Monitor team productivity",
+      "Confirm message appears: \"You manage 8 team members\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Standard team member with basic time tracking capabilities.",
+    "steps": [
+      "Execute action: Start/stop timer",
+      "Execute action: Create manual time entries",
+      "Execute action: Switch between projects",
+      "Confirm message appears: \"Timer started for Project Alpha\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Set up a new organization workspace.",
+    "steps": [
+      "Execute action: Sign up for Clockify account",
+      "Enter workspace name",
+      "Execute action: Choose workspace URL/subdomain (Enterprise)",
+      "Confirm message appears: \"Workspace 'Acme Corp' created successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Configure workspace-wide policies and preferences.",
+    "steps": [
+      "Execute action: Update workspace preferences",
+      "Execute action: Set required fields for time entries",
+      "Execute action: Enable/disable features",
+      "Confirm message appears: \"Workspace settings updated\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "View and manage all workspace members.",
+    "steps": [
+      "View list of all team members",
+      "Execute action: See member role and status (active/deactivated)",
+      "Execute action: Filter by role, team, or status",
+      "Confirm message appears: \"45 active members in workspace\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Add new users to workspace.",
+    "steps": [
+      "Click \"Invite Members\" button",
+      "Enter email addresses (multiple)",
+      "Execute action: Assign role for new members",
+      "Confirm message appears: \"Invitation sent to john@example.com\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Manage member access without deleting accounts.",
+    "steps": [
+      "Select member to deactivate",
+      "Execute action: Confirm deactivation",
+      "Execute action: Deactivated members cannot log in",
+      "Confirm message appears: \"Member deactivated - No longer has access\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Organize team members into logical groups.",
+    "steps": [
+      "Execute action: Create new group",
+      "Execute action: Name group (e.g., \"Design Team\", \"Developers\")",
+      "Execute action: Add members to group",
+      "Confirm message appears: \"Group 'Design Team' created with 8 members\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Apply settings and access control at group level.",
+    "steps": [
+      "Execute action: Assign projects to entire group",
+      "Execute action: Set group-level billable rates",
+      "Execute action: Filter reports by group",
+      "Confirm message appears: \"Design Team assigned to 5 projects\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Set default hourly rate for entire workspace.",
+    "steps": [
+      "Navigate to workspace settings",
+      "Execute action: Set default hourly rate (e.g., $75/hour)",
+      "Execute action: Choose currency",
+      "Confirm message appears: \"Default rate set to $75/hour\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Set individual hourly rates per team member.",
+    "steps": [
+      "Execute action: Go to team member profile",
+      "Execute action: Set custom hourly rate for member",
+      "Execute action: Override workspace default",
+      "Confirm message appears: \"Hourly rate for John Doe set to $95/hour\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Set custom rates specific to projects.",
+    "steps": [
+      "Execute action: Open project settings",
+      "Execute action: Set project hourly rate",
+      "Execute action: Rate applies to all time on project",
+      "Confirm message appears: \"Project rate set to $85/hour\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Most specific rate setting for individual tasks.",
+    "steps": [
+      "Execute action: Open task settings",
+      "Execute action: Set task hourly rate",
+      "Execute action: Highest priority in rate hierarchy",
+      "Confirm message appears: \"Task rate set to $125/hour\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Work with multiple currencies for international clients.",
+    "steps": [
+      "Execute action: Set currency per project or client",
+      "Execute action: Choose from 150+ currencies",
+      "View earnings in multiple currencies",
+      "Confirm message appears: \"Project currency set to EUR (€)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Designate time entries for client billing.",
+    "steps": [
+      "Execute action: Toggle \"Billable\" checkbox when tracking time",
+      "Execute action: Set project as billable by default",
+      "Execute action: Edit billable status of existing entries",
+      "Confirm message appears: \"Time entry marked as billable\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Analyze distribution of billable and non-billable time.",
+    "steps": [
+      "Execute action: Generate billability report",
+      "Execute action: See percentage breakdown",
+      "Execute action: Filter by team member, project",
+      "Confirm message appears: \"Billability rate: 72% (156 of 216 hours)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Generate client invoices from tracked time and expenses.",
+    "steps": [
+      "Select project or client",
+      "Execute action: Choose date range for invoice",
+      "Execute action: Review billable time entries",
+      "Confirm message appears: \"Invoice #2024-001 created\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track invoice lifecycle and payment status.",
+    "steps": [
+      "Execute action: Mark invoice as sent",
+      "Execute action: Mark invoice as paid",
+      "Execute action: Void invoice if needed",
+      "Confirm message appears: \"Invoice marked as sent\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automate invoices that repeat at regular intervals.",
+    "steps": [
+      "Execute action: Set up recurring invoice schedule",
+      "Execute action: Choose frequency (weekly, monthly, quarterly)",
+      "Execute action: Define scope (project, client, specific tasks)",
+      "Confirm message appears: \"Recurring invoice set up: Monthly on the 1st\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Brand invoices with company details and styling.",
+    "steps": [
+      "Execute action: Add company logo",
+      "Execute action: Set company information (name, address, tax ID)",
+      "Execute action: Customize invoice template",
+      "Confirm message appears: \"Invoice template customized with logo\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Record project-related expenses beyond time tracking.",
+    "steps": [
+      "Click \"Add Expense\"",
+      "Enter expense amount",
+      "Select project and category",
+      "Confirm message appears: \"Expense logged: $125 - Hotel accommodation\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Submit and approve expenses for reimbursement.",
+    "steps": [
+      "Execute action: Submit expenses for approval",
+      "Execute action: Manager reviews expense details and receipt",
+      "Execute action: Approve or reject with reason",
+      "Confirm message appears: \"Expense submitted for approval\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Add billable expenses to client invoices.",
+    "steps": [
+      "Select billable expenses when creating invoice",
+      "Execute action: Expenses automatically included if from project",
+      "Execute action: Show expense breakdown on invoice",
+      "Confirm message appears: \"3 billable expenses added to invoice ($425)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Define time and cost limits for projects.",
+    "steps": [
+      "Execute action: Set budget by hours or currency amount",
+      "Execute action: Choose budget type: total project or recurring (weekly/monthly)",
+      "Execute action: Set budget alert threshold (e.g., 80%)",
+      "Confirm message appears: \"Budget set: 100 hours / $7,500\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatic notifications when budget thresholds reached.",
+    "steps": [
+      "Execute action: Configure alert thresholds (e.g., 50%, 80%, 100%)",
+      "Execute action: Choose notification recipients (project manager, owner)",
+      "Select notification method (email, in-app)",
+      "Confirm message appears: \"Alert sent: Project 'Website' at 80% of budget\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Compare planned budget to actual spending.",
+    "steps": [
+      "Execute action: Generate budget report",
+      "View budget utilization across projects",
+      "Execute action: See projects over/under budget",
+      "Confirm message appears: \"Project under budget by $1,200 (16%)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Define expected time for projects and tasks.",
+    "steps": [
+      "Execute action: Set estimated hours for project",
+      "Execute action: Set estimated hours per task",
+      "Execute action: Choose estimate type: total or per member",
+      "Confirm message appears: \"Project estimate: 100 hours\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Analyze accuracy of time estimates.",
+    "steps": [
+      "Execute action: Generate estimate accuracy report",
+      "Execute action: See variance between estimated and actual",
+      "Execute action: Identify tasks consistently over/under estimated",
+      "Confirm message appears: \"Project completed in 105h vs 100h estimated (+5%)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Predict project completion and costs based on current trajectory.",
+    "steps": [
+      "View forecast on project dashboard",
+      "Execute action: See predicted completion date",
+      "View projected total cost",
+      "Confirm message appears: \"Forecast: Project will complete in 15 days (Jan 27)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Predict team capacity and availability.",
+    "steps": [
+      "View team workload forecast",
+      "Execute action: See scheduled vs available hours",
+      "Execute action: Identify overallocation",
+      "Confirm message appears: \"Team overallocated by 40 hours next week\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calculate profit margins on projects.",
+    "steps": [
+      "Execute action: Set project billing rate (revenue)",
+      "Execute action: Set team member cost rates",
+      "Execute action: Track revenue vs cost",
+      "Confirm message appears: \"Project profit: $2,500 (margin: 33%)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Set internal cost rates for profitability calculations.",
+    "steps": [
+      "Execute action: Set cost rate per team member (salary equivalent)",
+      "Execute action: Different from billing rate",
+      "Execute action: Used for internal calculations only",
+      "Confirm message appears: \"Cost rate for John: $60/hour (Billing rate: $95/hour)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Submit tracked time for manager approval.",
+    "steps": [
+      "Navigate to Timesheet view",
+      "Execute action: Review time entries for period (week/month/semi-monthly)",
+      "Execute action: Ensure all required fields filled",
+      "Confirm message appears: \"Timesheet submitted successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Retract submitted timesheet to make edits.",
+    "steps": [
+      "View submitted timesheet",
+      "Click \"Withdraw\" button",
+      "Execute action: Timesheet returns to editable state",
+      "Confirm message appears: \"Timesheet withdrawn - Now editable\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Make changes while submission is pending approval.",
+    "steps": [
+      "Execute action: Timesheet remains editable while pending",
+      "Execute action: Changes automatically reflected in approval view",
+      "Execute action: No need to withdraw and resubmit",
+      "Confirm message appears: \"Changes saved to pending timesheet\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Manager interface for reviewing submitted timesheets.",
+    "steps": [
+      "Navigate to Approvals page",
+      "View list of pending submissions",
+      "Execute action: Filter by team member, date, project",
+      "Confirm message appears: \"5 timesheets pending approval\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Examine timesheet details and approve.",
+    "steps": [
+      "Click on pending timesheet",
+      "Execute action: Review all time entries",
+      "Check for accuracy and completeness",
+      "Confirm message appears: \"Timesheet approved for John Doe\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Return timesheet to employee for corrections.",
+    "steps": [
+      "Click \"Reject\" button",
+      "Enter rejection reason (required)",
+      "Execute action: Specify what needs correction",
+      "Confirm message appears: \"Timesheet rejected and returned to John Doe\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Approve multiple timesheets at once.",
+    "steps": [
+      "Select multiple pending timesheets (checkboxes)",
+      "Click \"Approve Selected\" or \"Approve All\"",
+      "Execute action: Confirm bulk approval",
+      "Confirm message appears: \"5 timesheets approved successfully\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Who can approve timesheets.",
+    "steps": [
+      "Navigate to Approval Permissions feature",
+      "Confirm message appears: \"You can approve timesheets for 8 team members\"",
+      "Test Approval Permissions functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Define leave types and accrual rules.",
+    "steps": [
+      "Execute action: Create time off policy (e.g., \"Vacation Days\")",
+      "Execute action: Set accrual rate (hours per month)",
+      "Execute action: Set maximum balance cap",
+      "Confirm message appears: \"Policy 'Vacation Days' created\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Submit leave requests for approval.",
+    "steps": [
+      "Click \"Request Time Off\"",
+      "Select time off policy/type",
+      "Execute action: Choose dates (full day or partial)",
+      "Confirm message appears: \"Time off request submitted\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Manager approval of leave requests.",
+    "steps": [
+      "View time off requests in Approvals page",
+      "Execute action: See employee, dates, type, hours",
+      "Check team calendar for conflicts",
+      "Confirm message appears: \"Time off approved for John Doe\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Visualize team availability and time off.",
+    "steps": [
+      "View team calendar with time off blocks",
+      "Execute action: See who's out today/this week",
+      "Execute action: Identify scheduling conflicts",
+      "Confirm message appears: \"3 team members out today\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Configure company holidays and observances.",
+    "steps": [
+      "Execute action: Create holiday calendar",
+      "Execute action: Add holidays manually or import",
+      "Execute action: Set holidays as paid/unpaid",
+      "Confirm message appears: \"Holiday 'New Year's Day' added to Jan 1\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Monitor time off accruals and usage.",
+    "steps": [
+      "View personal time off balance",
+      "Execute action: See accrual history",
+      "Execute action: Track used vs available time",
+      "Confirm message appears: \"Current balance: 80 hours available\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track time off as time entries for reporting.",
+    "steps": [
+      "Execute action: Enable \"Time off entries\" option",
+      "Execute action: Approved time off auto-creates time entries",
+      "Execute action: Time off appears in timesheet and reports",
+      "Confirm message appears: \"Time off entries created for Jan 22-24\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatic reminders for timesheet submission.",
+    "steps": [
+      "Execute action: Admin configures reminder schedule",
+      "Execute action: Reminders sent before deadline (e.g., Friday 4pm)",
+      "Execute action: Choose notification method (email, in-app)",
+      "Confirm message appears: \"Reminder: Submit your timesheet by 5pm today\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Alerts for managers about pending approvals.",
+    "steps": [
+      "Execute action: Manager receives notification when timesheet submitted",
+      "Execute action: Orange dot indicator in sidebar",
+      "Execute action: Email notification (configurable)",
+      "Confirm message appears: \"5 timesheets pending your approval\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Inform employees of approval/rejection.",
+    "steps": [
+      "Execute action: Employee auto-notified when approved/rejected",
+      "Execute action: Email with approval status",
+      "Execute action: In-app notification",
+      "Confirm message appears: \"Your timesheet was approved\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatically monitor desktop applications and websites during work time.",
+    "steps": [
+      "Execute action: Install desktop app (Windows/Mac)",
+      "Execute action: Enable auto-tracker in settings",
+      "Execute action: Start timer to begin monitoring",
+      "Confirm message appears: \"Auto-tracker enabled - Monitoring apps when timer runs\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Label apps and websites by productivity level.",
+    "steps": [
+      "View list of tracked apps/sites",
+      "Click to categorize each",
+      "Execute action: Choose: Productive, Neutral, or Unproductive",
+      "Confirm message appears: \"VS Code categorized as Productive\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Automatically create time entries based on app usage.",
+    "steps": [
+      "Execute action: Set rules to auto-start timer for specific apps",
+      "Execute action: Example: Opening VS Code starts project \"Development\"",
+      "Execute action: Configure app → project/task mapping",
+      "Confirm message appears: \"Timer auto-started for 'Development' project\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track location of field workers when clocking in.",
+    "steps": [
+      "Execute action: Enable GPS tracking on mobile app (iOS/Android)",
+      "Execute action: Employee clocks in via mobile app",
+      "Execute action: GPS coordinates captured at clock-in/out",
+      "Confirm message appears: \"GPS tracking enabled\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "View historical location data for field teams.",
+    "steps": [
+      "View 7 days of location history",
+      "Execute action: See all places visited during shifts",
+      "Execute action: Replay route taken during day",
+      "Confirm message appears: \"Visited 5 client sites on Jan 15\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Define location boundaries for clock-in restrictions.",
+    "steps": [
+      "Navigate to Geofencing feature",
+      "Test Geofencing functionality",
+      "Verify Geofencing works as expected"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Capture periodic screenshots during time tracking.",
+    "steps": [
+      "Execute action: Enable screenshots in workspace settings (admin)",
+      "Execute action: Screenshots taken every 5 minutes when timer runs",
+      "Execute action: User receives notification when active",
+      "Confirm message appears: \"Screenshot recording enabled\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Configure screenshot behavior and quality.",
+    "steps": [
+      "Navigate to Screenshot Settings feature",
+      "Confirm message appears: \"Screenshots enabled for Pro plan users\"",
+      "Test Screenshot Settings functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Identify periods of inactivity during time tracking.",
+    "steps": [
+      "Execute action: Configure idle threshold (e.g., 10 minutes)",
+      "Execute action: Receive idle detection notification",
+      "Execute action: Choose action: Discard, Discard & Continue, or Keep",
+      "Confirm message appears: \"No activity for 10 minutes - What to do?\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Configure idle detection behavior.",
+    "steps": [
+      "Navigate to Idle Detection Settings feature",
+      "Confirm message appears: \"Idle detection set to 10 minutes\"",
+      "Test Idle Detection Settings functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Review own productivity and app usage.",
+    "steps": [
+      "View daily/weekly activity report",
+      "Execute action: See top apps and websites used",
+      "View productivity score (if categorized)",
+      "Confirm message appears: \"Active time: 7h 30m of 8h tracked (94%)\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Manager view of team productivity (if enabled).",
+    "steps": [
+      "View team activity summaries",
+      "Execute action: See which apps teams are using",
+      "Execute action: Compare productivity across team",
+      "Confirm message appears: \"Team average productivity: 76%\""
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Full-featured browser-based interface.",
+    "steps": [
+      "Navigate to Web App Features feature",
+      "Confirm message appears: \"Timer synced across all devices\"",
+      "Test Web App Features functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Supported browsers and versions.",
+    "steps": [
+      "Navigate to Browser Requirements feature",
+      "Confirm message appears: \"Unsupported browser detected - Please update\"",
+      "Test Browser Requirements functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Native Windows application with enhanced features.",
+    "steps": [
+      "Navigate to Windows Desktop App feature",
+      "Confirm message appears: \"Clockify running in system tray\"",
+      "Test Windows Desktop App functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Native macOS application.",
+    "steps": [
+      "Navigate to Mac Desktop App feature",
+      "Confirm message appears: \"Running in menu bar\"",
+      "Test Mac Desktop App functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Linux application for Debian/Ubuntu and RPM-based systems.",
+    "steps": [
+      "Navigate to Linux Desktop App feature",
+      "Confirm message appears: \"Clockify installed on Linux\"",
+      "Test Linux Desktop App functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Native iPhone and iPad application.",
+    "steps": [
+      "Navigate to iOS App feature",
+      "Confirm message appears: \"Timer running in background\"",
+      "Test iOS App functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Native Android application.",
+    "steps": [
+      "Navigate to Android App feature",
+      "Confirm message appears: \"Tracking time in background\"",
+      "Test Android App functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Features not available on mobile apps.",
+    "steps": [
+      "Navigate to Mobile Limitations feature",
+      "Confirm message appears: \"For full features, use web or desktop app\"",
+      "Test Mobile Limitations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Track time directly from Chrome browser.",
+    "steps": [
+      "Navigate to Chrome Extension feature",
+      "Confirm message appears: \"Timer started from Jira ticket #1234\"",
+      "Test Chrome Extension functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Mozilla Firefox browser extension.",
+    "steps": [
+      "Navigate to Firefox Extension feature",
+      "Confirm message appears: \"Clockify for Firefox installed\"",
+      "Test Firefox Extension functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Microsoft Edge browser extension.",
+    "steps": [
+      "Navigate to Edge Extension feature",
+      "Test Edge Extension functionality",
+      "Verify Edge Extension works as expected"
+    ],
+    "passes": false
+  },
+  {
+    "category": "performance",
+    "description": "Instant synchronization across all platforms.",
+    "steps": [
+      "Navigate to Real-Time Sync feature",
+      "Confirm message appears: \"Timer synced across all devices\"",
+      "Test Real-Time Sync functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "performance",
+    "description": "Work without internet, sync when reconnected.",
+    "steps": [
+      "Navigate to Offline Mode & Sync feature",
+      "Confirm message appears: \"Working offline - Will sync when online\"",
+      "Test Offline Mode & Sync functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Uniform experience across all platforms.",
+    "steps": [
+      "Navigate to Cross-Platform Consistency feature",
+      "Confirm message appears: \"Feature available on desktop app\"",
+      "Test Cross-Platform Consistency functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Connect with popular project management tools.",
+    "steps": [
+      "Navigate to Project Management Integrations feature",
+      "Confirm message appears: \"Timer started from Jira issue ABC-123\"",
+      "Test Project Management Integrations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Integrate with developer platforms and tools.",
+    "steps": [
+      "Navigate to Development Tool Integrations feature",
+      "Confirm message appears: \"Timer started from GitHub PR #456\"",
+      "Test Development Tool Integrations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Connect with team communication platforms.",
+    "steps": [
+      "Navigate to Communication Tool Integrations feature",
+      "Confirm message appears: \"Timer started: 0:00:05 - Project Alpha\"",
+      "Test Communication Tool Integrations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Sync time data with accounting software.",
+    "steps": [
+      "Navigate to Accounting & Billing Integrations feature",
+      "Confirm message appears: \"156 hours exported to QuickBooks\"",
+      "Test Accounting & Billing Integrations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Sync with calendar applications.",
+    "steps": [
+      "Navigate to Calendar Integrations feature",
+      "Confirm message appears: \"Google Calendar connected\"",
+      "Test Calendar Integrations functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Universal integration via browser extension.",
+    "steps": [
+      "Navigate to Browser-Based Integration feature",
+      "Confirm message appears: \"Clockify integrated with this page\"",
+      "Test Browser-Based Integration functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Programmatic access to Clockify data and functionality.",
+    "steps": [
+      "Navigate to REST API Overview feature",
+      "Confirm message appears: \"API key generated successfully\"",
+      "Test REST API Overview functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Request throttling to ensure service stability.",
+    "steps": [
+      "Navigate to API Rate Limits feature",
+      "Confirm message appears: \"Rate limit exceeded - Retry after X seconds\"",
+      "Test API Rate Limits functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Common scenarios for API integration.",
+    "steps": [
+      "Navigate to API Use Cases feature",
+      "Test API Use Cases functionality",
+      "Verify API Use Cases works as expected"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Receive real-time notifications for Clockify events.",
+    "steps": [
+      "Navigate to Webhook Configuration feature",
+      "Confirm message appears: \"Webhook created: Time Entry Updates\"",
+      "Test Webhook Configuration functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Types of events that trigger webhooks.",
+    "steps": [
+      "Navigate to Webhook Events feature",
+      "Test Webhook Events functionality",
+      "Verify Webhook Events works as expected"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Practical applications of webhooks.",
+    "steps": [
+      "Navigate to Webhook Use Cases feature",
+      "Confirm message appears: \"Webhook triggered: TIMER_STARTED\"",
+      "Test Webhook Use Cases functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Secure webhook endpoints.",
+    "steps": [
+      "Navigate to Webhook Security feature",
+      "Confirm message appears: \"Warning: HTTP endpoint not secure - Use HTTPS\"",
+      "Test Webhook Security functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Connect Clockify with 3,000+ apps via Zapier.",
+    "steps": [
+      "Navigate to Zapier Integration feature",
+      "Confirm message appears: \"Zapier connected to Clockify\"",
+      "Test Zapier Integration functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Integrate via additional automation tools.",
+    "steps": [
+      "Navigate to Other Automation Platforms feature",
+      "Confirm message appears: \"Clockify connected to Make\"",
+      "Test Other Automation Platforms functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Migrate data from other time tracking tools.",
+    "steps": [
+      "Navigate to Data Import feature",
+      "Confirm message appears: \"CSV uploaded - 1,245 entries found\"",
+      "Test Data Import functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "integration",
+    "description": "Export Clockify data for backup or analysis.",
+    "steps": [
+      "Navigate to Data Export feature",
+      "Confirm message appears: \"Export started: 10,000 time entries\"",
+      "Test Data Export functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Unlimited users and time tracking at no cost.",
+    "steps": [
+      "Navigate to Free Plan feature",
+      "Confirm message appears: \"You're on the Free plan - Upgrade anytime\"",
+      "Test Free Plan functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Entry-level paid features for small teams.",
+    "steps": [
+      "Navigate to Basic Plan feature",
+      "Confirm message appears: \"Basic plan: $5.49/user/month (annual)\"",
+      "Test Basic Plan functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Mid-tier plan with approval workflows.",
+    "steps": [
+      "Navigate to Standard Plan feature",
+      "Confirm message appears: \"Standard plan: $7.99/user/month (annual)\"",
+      "Test Standard Plan functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Advanced features for growing teams.",
+    "steps": [
+      "Navigate to Pro Plan feature",
+      "Confirm message appears: \"Pro plan: $9.99/user/month (annual)\"",
+      "Test Pro Plan functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Full-featured plan for large organizations.",
+    "steps": [
+      "Navigate to Enterprise Plan feature",
+      "Confirm message appears: \"Enterprise plan: $11.99/user/month (annual)\"",
+      "Test Enterprise Plan functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "security",
+    "description": "Choose monthly or annual billing.",
+    "steps": [
+      "Navigate to Comprehensive Feature Comparison\n\n| Feature | Free | Basic | Standard | Pro | Enterprise |\n|---------|------|-------|----------|-----|------------|\n| **Core Time Tracking** |\n| Unlimited users | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Unlimited projects | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timer & manual entry | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Web, desktop, mobile apps | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Browser extensions | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Calendar view | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timesheet view | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Pomodoro timer | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Idle time detection | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Offline tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Break tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| **Project Management** |\n| Projects & clients | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Tasks & subtasks | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Tags | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Project templates | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Custom fields | ✗ | ✗ | ✗ | ✓ (50) | ✓ (50) |\n| Project favorites | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Team & Permissions** |\n| User roles (Owner, Admin, User) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Manager roles (Project/Team) | ✗ | ✗ | ✓ | ✓ | ✓ |\n| User groups | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Hide time from team | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Advanced permissions | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Reporting** |\n| Basic reports (Summary, Detailed) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Dashboard | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Export (PDF, CSV, Excel) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Shared report links | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Scheduled reports | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Custom export fields | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Financial** |\n| Billable rates | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Basic invoicing | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Custom invoicing | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Expense tracking | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Budget tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Labor costs | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Profit calculations | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Forecasting | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Approval & Time Off** |\n| Timesheet submission | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timesheet approval | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Time off management | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Time off policies | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Balance accrual | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Kiosk** |\n| Basic kiosk | ✓ | ✓ | ✓ | ✓ | ✓ |\n| PIN authentication (4-6 digit) | ✗ | ✓ | ✓ | ✓ | ✓ |\n| QR code authentication | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Kiosk customization | ✗ | ✗ | ✓ | ✓ | ✓ |\n| **Activity Monitoring** |\n| Auto-tracker (apps/websites) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| GPS tracking | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Screenshots | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Advanced Features** |\n| Scheduling | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Required fields | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Lock time entries | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Bulk edit | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Task assignments | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Enterprise Features** |\n| Single Sign-On (SSO) | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Audit logs | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Custom subdomain | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Priority support | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Account manager | ✗ | ✗ | ✗ | ✗ | ✓ |\n| **Integrations** |\n| 80+ web integrations | ✓ | ✓ | ✓ | ✓ | ✓ |\n| API access | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Webhooks | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Zapier | ✓ | ✓ | ✓ | ✓ | ✓ |\n| **Support** |\n| Email support | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Help center | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Priority support | ✗ | ✗ | ✗ | ✗ | ✓ |\n\n## 10.3 Billing & Subscription\n\n### 10.3.1 Billing Cycles feature",
+      "Confirm message appears: \"Annual plan: Save 20% ($240/year for 10 users)\"",
+      "Test Comprehensive Feature Comparison\n\n| Feature | Free | Basic | Standard | Pro | Enterprise |\n|---------|------|-------|----------|-----|------------|\n| **Core Time Tracking** |\n| Unlimited users | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Unlimited projects | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timer & manual entry | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Web, desktop, mobile apps | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Browser extensions | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Calendar view | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timesheet view | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Pomodoro timer | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Idle time detection | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Offline tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Break tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| **Project Management** |\n| Projects & clients | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Tasks & subtasks | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Tags | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Project templates | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Custom fields | ✗ | ✗ | ✗ | ✓ (50) | ✓ (50) |\n| Project favorites | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Team & Permissions** |\n| User roles (Owner, Admin, User) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Manager roles (Project/Team) | ✗ | ✗ | ✓ | ✓ | ✓ |\n| User groups | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Hide time from team | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Advanced permissions | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Reporting** |\n| Basic reports (Summary, Detailed) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Dashboard | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Export (PDF, CSV, Excel) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Shared report links | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Scheduled reports | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Custom export fields | ✗ | ✓ | ✓ | ✓ | ✓ |\n| **Financial** |\n| Billable rates | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Basic invoicing | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Custom invoicing | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Expense tracking | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Budget tracking | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Labor costs | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Profit calculations | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Forecasting | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Approval & Time Off** |\n| Timesheet submission | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Timesheet approval | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Time off management | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Time off policies | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Balance accrual | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Kiosk** |\n| Basic kiosk | ✓ | ✓ | ✓ | ✓ | ✓ |\n| PIN authentication (4-6 digit) | ✗ | ✓ | ✓ | ✓ | ✓ |\n| QR code authentication | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Kiosk customization | ✗ | ✗ | ✓ | ✓ | ✓ |\n| **Activity Monitoring** |\n| Auto-tracker (apps/websites) | ✓ | ✓ | ✓ | ✓ | ✓ |\n| GPS tracking | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Screenshots | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Advanced Features** |\n| Scheduling | ✗ | ✗ | ✗ | ✓ | ✓ |\n| Required fields | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Lock time entries | ✗ | ✗ | ✓ | ✓ | ✓ |\n| Bulk edit | ✗ | ✓ | ✓ | ✓ | ✓ |\n| Task assignments | ✗ | ✗ | ✗ | ✓ | ✓ |\n| **Enterprise Features** |\n| Single Sign-On (SSO) | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Audit logs | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Custom subdomain | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Priority support | ✗ | ✗ | ✗ | ✗ | ✓ |\n| Account manager | ✗ | ✗ | ✗ | ✗ | ✓ |\n| **Integrations** |\n| 80+ web integrations | ✓ | ✓ | ✓ | ✓ | ✓ |\n| API access | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Webhooks | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Zapier | ✓ | ✓ | ✓ | ✓ | ✓ |\n| **Support** |\n| Email support | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Help center | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Priority support | ✗ | ✗ | ✗ | ✗ | ✓ |\n\n## 10.3 Billing & Subscription\n\n### 10.3.1 Billing Cycles functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Per-user pricing model.",
+    "steps": [
+      "Navigate to User Licenses feature",
+      "Confirm message appears: \"25 active users × $9.99 = $249.75/month\"",
+      "Test User Licenses functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Upgrade or downgrade subscription.",
+    "steps": [
+      "Navigate to Plan Changes feature",
+      "Confirm message appears: \"Upgraded to Pro plan - New features active now\"",
+      "Test Plan Changes functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Accepted payment options.",
+    "steps": [
+      "Navigate to Payment Methods feature",
+      "Confirm message appears: \"Payment method updated\"",
+      "Test Payment Methods functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Test paid features before committing.",
+    "steps": [
+      "Navigate to Paid Plan Trials feature",
+      "Confirm message appears: \"Pro plan trial: 14 days remaining\"",
+      "Test Paid Plan Trials functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Seamless upgrade from Free plan.",
+    "steps": [
+      "Navigate to Migration from Free feature",
+      "Confirm message appears: \"Upgraded from Free to Pro\"",
+      "Test Migration from Free functionality"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Special pricing for large organizations.",
+    "steps": [
+      "Navigate to Large Team Pricing feature",
+      "Confirm message appears: \"Contact sales for 100+ user pricing\"",
+      "Test Large Team Pricing functionality"
+    ],
+    "passes": false
+  }
+]
