@@ -1,0 +1,120 @@
+# Docker Compose Configuration for Time Tracker Application
+#
+# NOTE: In this development environment, services (API/Frontend) run directly via npm.
+# This docker-compose file is provided for:
+# 1. Running PostgreSQL and Redis locally during development
+# 2. Documentation of the required services
+# 3. Future deployment reference
+#
+# To use:
+# 1. Start services: docker-compose up -d
+# 2. Stop services: docker-compose down
+# 3. Stop and remove volumes: docker-compose down -v
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: clockify-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: clockify
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - clockify-network
+
+  # Redis Cache & Session Store
+  redis:
+    image: redis:7-alpine
+    container_name: clockify-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ""
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - clockify-network
+
+  # pgAdmin (Optional - Database Management UI)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: clockify-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@clockify.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    networks:
+      - clockify-network
+    profiles:
+      - tools
+
+  # Redis Commander (Optional - Redis Management UI)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: clockify-redis-commander
+    restart: unless-stopped
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+    networks:
+      - clockify-network
+    profiles:
+      - tools
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+
+networks:
+  clockify-network:
+    driver: bridge
+
+# Usage Examples:
+#
+# Start only required services (postgres + redis):
+#   docker-compose up -d
+#
+# Start with management tools (pgadmin + redis-commander):
+#   docker-compose --profile tools up -d
+#
+# View logs:
+#   docker-compose logs -f [service-name]
+#
+# Access services:
+#   - PostgreSQL: localhost:5432
+#   - Redis: localhost:6379
+#   - pgAdmin: http://localhost:5050 (admin@clockify.local / admin)
+#   - Redis Commander: http://localhost:8081

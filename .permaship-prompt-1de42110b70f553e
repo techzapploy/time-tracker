@@ -1,0 +1,43 @@
+You are pushing changes to a **GitHub** repository.
+
+## Authentication
+Git credentials are pre-configured via credential helper. `git push` will work directly without any additional setup.
+The GITHUB_TOKEN environment variable is available for GitHub API calls.
+
+## Git Identity
+Git author/committer name and email are pre-configured via environment variables. Do NOT change them with `git config`.
+
+## Commit Message
+- Do NOT add any "Co-Authored-By", "Signed-off-by", or similar trailers to the commit message.
+- The commit message should only contain the description of the changes.
+
+## Steps
+1. Run `git diff --stat` to review what's being committed
+2. Stage the changed files with `git add`
+3. Create a clear, descriptive commit message summarizing the change
+4. Push the feature branch: `git push -u origin HEAD`
+5. Create a **pull request** against the **main** branch using the GitHub API with curl:
+   ```
+   curl -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" \
+     https://api.github.com/repos/OWNER/REPO/pulls \
+     -d '{"title":"...","head":"BRANCH","base":"main","body":"..."}'
+   ```
+   Extract OWNER/REPO from `git remote get-url origin` (strip auth credentials from the URL before parsing).
+   If `gh` CLI is available, you may use `gh pr create --base main` instead.
+
+## PR Description
+Include a concise summary of what changed and why. Reference the ticket ID if available.
+
+## Output Requirements
+Your output MUST include:
+- status: "ok" if push and PR creation succeeded, "failed" if something went wrong
+- summary: What was committed and where
+- branch_name: The feature branch name
+- commit_sha: The commit hash
+- pr_url: The URL of the created pull request
+
+Context:
+{
+  "ticketId": "842207c5-74a6-474f-bb5d-d6265cf1d0d4",
+  "jobId": "94149bf6-d1b4-41ee-9bd9-5490c513591a"
+}
