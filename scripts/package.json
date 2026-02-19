@@ -1,0 +1,23 @@
+{
+  "name": "time-tracker-integration-tests",
+  "version": "1.0.0",
+  "description": "Daily integration tests for time-tracker services",
+  "type": "module",
+  "scripts": {
+    "test": "tsx integration-test.ts"
+  },
+  "keywords": [
+    "integration-test"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/pg": "^8.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
