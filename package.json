@@ -1,0 +1,16 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "Time tracking application with GitHub, Discord, Render, Linear, and NeonDB integration",
+  "type": "module",
+  "scripts": {
+    "test:integrations": "tsx scripts/integration-test.ts"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2"
+  }
+}
