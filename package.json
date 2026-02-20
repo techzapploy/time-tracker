@@ -1,0 +1,25 @@
+{
+  "name": "clockify-clone",
+  "version": "1.0.0",
+  "description": "Time tracking application (Clockify clone) with API and Frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:integration": "tsx scripts/integration-test.ts"
+  },
+  "keywords": [
+    "time-tracking",
+    "clockify",
+    "fastify",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  },
+  "workspaces": [
+    "api",
+    "frontend"
+  ]
+}
