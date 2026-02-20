@@ -1,0 +1,16 @@
+{
+  "name": "clockify-clone",
+  "version": "1.0.0",
+  "description": "Time tracking application - monorepo root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "integration-test": "cd api && npx tsx integration-test.ts"
+  },
+  "keywords": [
+    "time-tracking",
+    "clockify"
+  ],
+  "author": "",
+  "license": "MIT"
+}
