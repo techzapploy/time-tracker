@@ -1,0 +1,2 @@
+# This file ensures the DailyIntegrationTestResult directory is tracked by git
+# Integration test reports will be generated here
