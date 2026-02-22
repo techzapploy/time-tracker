@@ -13,7 +13,9 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "lint": "eslint src --ext .ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test:integration": "NODE_PATH=./node_modules tsx ../tests/integration/run-integration-tests.ts",
+    "integration-test": "NODE_PATH=./node_modules tsx ../tests/integration/run-integration-tests.ts"
   },
   "keywords": [
     "fastify",
