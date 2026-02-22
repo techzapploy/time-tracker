@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "typeRoots": ["../../api/node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "postgres": ["../../api/node_modules/postgres/types/index.d.ts"],
+      "ioredis": ["../../api/node_modules/ioredis/built/index.d.ts"],
+      "dotenv": ["../../api/node_modules/dotenv/lib/main.d.ts"]
+    }
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}
