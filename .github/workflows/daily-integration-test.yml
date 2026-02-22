@@ -1,0 +1,94 @@
+name: Daily Integration Test
+
+on:
+  # Run daily at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integration-test:
+    name: Run Integration Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: api/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./api
+        run: npm ci
+
+      - name: Run integration tests
+        working-directory: ./
+        env:
+          # Database configuration
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+          # Redis configuration
+          REDIS_HOST: ${{ secrets.REDIS_HOST }}
+          REDIS_PORT: ${{ secrets.REDIS_PORT }}
+          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+
+          # External service API keys
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          NEON_API_KEY: ${{ secrets.NEON_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run integration-test --prefix api
+        continue-on-error: true
+
+      - name: Commit and push report
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add the generated report
+          git add DailyIntegrationTestResult/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add integration test report for $(date +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integration-test-report-${{ github.run_number }}
+          path: DailyIntegrationTestResult/*.md
+          retention-days: 30
+
+      - name: Check test results
+        run: |
+          # Check if the integration test script failed
+          if [ -f DailyIntegrationTestResult/Integration-Status-$(date +%Y-%m-%d).md ]; then
+            if grep -q "Overall Status: ❌ FAILING" DailyIntegrationTestResult/Integration-Status-$(date +%Y-%m-%d).md; then
+              echo "Integration tests failed!"
+              exit 1
+            else
+              echo "Integration tests passed!"
+            fi
+          else
+            echo "Report file not found"
+            exit 1
+          fi
