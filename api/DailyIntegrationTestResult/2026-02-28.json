@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-02-28T16:06:49.436Z",
+  "results": [
+    {
+      "service": "postgres",
+      "passed": true
+    },
+    {
+      "service": "redis",
+      "passed": true
+    },
+    {
+      "service": "github",
+      "passed": false,
+      "error": "GITHUB_TOKEN env var not set"
+    },
+    {
+      "service": "discord",
+      "passed": false,
+      "error": "DISCORD_BOT_TOKEN env var not set"
+    },
+    {
+      "service": "linear",
+      "passed": false,
+      "error": "LINEAR_API_KEY env var not set"
+    },
+    {
+      "service": "render",
+      "passed": false,
+      "error": "RENDER_API_KEY env var not set"
+    },
+    {
+      "service": "sentry",
+      "passed": false,
+      "error": "SENTRY_DSN env var not set"
+    }
+  ],
+  "passed": false
+}
