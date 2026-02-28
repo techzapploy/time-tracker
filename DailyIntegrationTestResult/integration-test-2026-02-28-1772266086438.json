@@ -1,0 +1,54 @@
+{
+  "date": "2026-02-28",
+  "timestamp": "2026-02-28T08:08:06.434Z",
+  "summary": {
+    "total": 7,
+    "passed": 1,
+    "failed": 1,
+    "skipped": 5
+  },
+  "results": [
+    {
+      "service": "postgres",
+      "status": "fail",
+      "message": "password authentication failed for user \"postgres\"",
+      "duration_ms": 20
+    },
+    {
+      "service": "redis",
+      "status": "pass",
+      "message": "Successfully connected and received PONG",
+      "duration_ms": 6
+    },
+    {
+      "service": "discord",
+      "status": "skipped",
+      "message": "DISCORD_WEBHOOK_URL env var not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "github",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN / INTEGRATION_GITHUB_TOKEN env var not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY env var not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY env var not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "sentry",
+      "status": "skipped",
+      "message": "SENTRY_DSN env var not set",
+      "duration_ms": 0
+    }
+  ]
+}
