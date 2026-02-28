@@ -1,0 +1,54 @@
+{
+  "date": "2026-02-28",
+  "timestamp": "2026-02-28T06:05:54.396Z",
+  "summary": {
+    "total": 7,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 7
+  },
+  "results": [
+    {
+      "service": "postgres",
+      "status": "skipped",
+      "message": "DATABASE_URL not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "redis",
+      "status": "skipped",
+      "message": "REDIS_HOST not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "discord",
+      "status": "skipped",
+      "message": "DISCORD_WEBHOOK_URL not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "github",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN not set",
+      "duration_ms": 0
+    },
+    {
+      "service": "sentry",
+      "status": "skipped",
+      "message": "SENTRY_DSN not set",
+      "duration_ms": 0
+    }
+  ]
+}
