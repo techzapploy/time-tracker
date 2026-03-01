@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-03-01T22:11:50.234Z",
+  "results": [
+    {
+      "name": "postgres",
+      "status": "passed",
+      "message": "Connected to PostgreSQL successfully at postgresql://postgres:***@postgres:5432/postgres",
+      "durationMs": 25
+    },
+    {
+      "name": "redis",
+      "status": "passed",
+      "message": "Connected to Redis successfully (redis)",
+      "durationMs": 20
+    },
+    {
+      "name": "discord",
+      "status": "skipped",
+      "message": "DISCORD_WEBHOOK_URL and DISCORD_TOKEN are not set",
+      "durationMs": 0
+    },
+    {
+      "name": "github",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "sentry",
+      "status": "skipped",
+      "message": "SENTRY_DSN is not set",
+      "durationMs": 0
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 5
+  }
+}
