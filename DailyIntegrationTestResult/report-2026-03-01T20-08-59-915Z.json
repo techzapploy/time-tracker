@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-01T20:08:59.915Z",
+  "summary": {
+    "passed": 1,
+    "failed": 1,
+    "skipped": 5
+  },
+  "results": [
+    {
+      "service": "postgres",
+      "status": "fail",
+      "message": "PostgreSQL connection failed: password authentication failed for user \"postgres\"",
+      "timestamp": "2026-03-01T20:08:59.888Z"
+    },
+    {
+      "service": "redis",
+      "status": "pass",
+      "message": "Redis connection successful (PING returned PONG)",
+      "timestamp": "2026-03-01T20:08:59.890Z"
+    },
+    {
+      "service": "discord",
+      "status": "skip",
+      "message": "Skipped: DISCORD_WEBHOOK_URL and DISCORD_TOKEN are both unset",
+      "timestamp": "2026-03-01T20:08:59.891Z"
+    },
+    {
+      "service": "github",
+      "status": "skip",
+      "message": "Skipped: GITHUB_TOKEN is unset",
+      "timestamp": "2026-03-01T20:08:59.891Z"
+    },
+    {
+      "service": "linear",
+      "status": "skip",
+      "message": "Skipped: LINEAR_API_KEY is unset",
+      "timestamp": "2026-03-01T20:08:59.891Z"
+    },
+    {
+      "service": "render",
+      "status": "skip",
+      "message": "Skipped: RENDER_API_KEY is unset",
+      "timestamp": "2026-03-01T20:08:59.891Z"
+    },
+    {
+      "service": "sentry",
+      "status": "skip",
+      "message": "Skipped: SENTRY_DSN is unset",
+      "timestamp": "2026-03-01T20:08:59.891Z"
+    }
+  ]
+}

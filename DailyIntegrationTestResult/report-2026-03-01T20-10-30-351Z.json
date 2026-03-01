@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-01T20:10:30.351Z",
+  "summary": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 7
+  },
+  "results": [
+    {
+      "service": "postgres",
+      "status": "skip",
+      "message": "Skipped: DATABASE_URL and POSTGRES_HOST are both unset",
+      "timestamp": "2026-03-01T20:10:30.348Z"
+    },
+    {
+      "service": "redis",
+      "status": "skip",
+      "message": "Skipped: REDIS_HOST is unset",
+      "timestamp": "2026-03-01T20:10:30.348Z"
+    },
+    {
+      "service": "discord",
+      "status": "skip",
+      "message": "Skipped: DISCORD_WEBHOOK_URL and DISCORD_TOKEN are both unset",
+      "timestamp": "2026-03-01T20:10:30.349Z"
+    },
+    {
+      "service": "github",
+      "status": "skip",
+      "message": "Skipped: GITHUB_TOKEN is unset",
+      "timestamp": "2026-03-01T20:10:30.349Z"
+    },
+    {
+      "service": "linear",
+      "status": "skip",
+      "message": "Skipped: LINEAR_API_KEY is unset",
+      "timestamp": "2026-03-01T20:10:30.349Z"
+    },
+    {
+      "service": "render",
+      "status": "skip",
+      "message": "Skipped: RENDER_API_KEY is unset",
+      "timestamp": "2026-03-01T20:10:30.349Z"
+    },
+    {
+      "service": "sentry",
+      "status": "skip",
+      "message": "Skipped: SENTRY_DSN is unset",
+      "timestamp": "2026-03-01T20:10:30.349Z"
+    }
+  ]
+}
