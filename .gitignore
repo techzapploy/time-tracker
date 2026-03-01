@@ -52,6 +52,9 @@ coverage/
 .pytest_cache/
 __pycache__/
 
+# Integration test reports
+DailyIntegrationTestResult/
+
 # Caching
 .eslintcache
 .stylelintcache
