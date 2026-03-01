@@ -1,0 +1,44 @@
+[
+  {
+    "service": "PostgreSQL",
+    "status": "skip",
+    "message": "DATABASE_URL not set",
+    "timestamp": "2026-03-01T08:10:42.008Z"
+  },
+  {
+    "service": "Redis",
+    "status": "pass",
+    "message": "PING successful",
+    "timestamp": "2026-03-01T08:10:42.009Z"
+  },
+  {
+    "service": "Discord",
+    "status": "skip",
+    "message": "DISCORD_TOKEN and DISCORD_WEBHOOK_URL not set",
+    "timestamp": "2026-03-01T08:10:42.010Z"
+  },
+  {
+    "service": "GitHub",
+    "status": "skip",
+    "message": "GITHUB_TOKEN not set",
+    "timestamp": "2026-03-01T08:10:42.010Z"
+  },
+  {
+    "service": "Linear",
+    "status": "skip",
+    "message": "LINEAR_API_KEY not set",
+    "timestamp": "2026-03-01T08:10:42.010Z"
+  },
+  {
+    "service": "Render",
+    "status": "skip",
+    "message": "RENDER_API_KEY not set",
+    "timestamp": "2026-03-01T08:10:42.010Z"
+  },
+  {
+    "service": "Sentry",
+    "status": "skip",
+    "message": "SENTRY_AUTH_TOKEN and SENTRY_DSN not set",
+    "timestamp": "2026-03-01T08:10:42.010Z"
+  }
+]
