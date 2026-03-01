@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-01T18:06:32.892Z",
+  "results": [
+    {
+      "service": "PostgreSQL",
+      "status": "pass",
+      "message": "Connection successful",
+      "timestamp": "2026-03-01T18:06:32.861Z"
+    },
+    {
+      "service": "Redis",
+      "status": "pass",
+      "message": "Connection successful",
+      "timestamp": "2026-03-01T18:06:32.863Z"
+    },
+    {
+      "service": "Discord",
+      "status": "skip",
+      "message": "No Discord credentials configured",
+      "timestamp": "2026-03-01T18:06:32.864Z"
+    },
+    {
+      "service": "GitHub",
+      "status": "skip",
+      "message": "GITHUB_TOKEN not configured",
+      "timestamp": "2026-03-01T18:06:32.864Z"
+    },
+    {
+      "service": "Linear",
+      "status": "skip",
+      "message": "LINEAR_API_KEY not configured",
+      "timestamp": "2026-03-01T18:06:32.864Z"
+    },
+    {
+      "service": "Render",
+      "status": "skip",
+      "message": "RENDER_API_KEY not configured",
+      "timestamp": "2026-03-01T18:06:32.864Z"
+    },
+    {
+      "service": "Sentry",
+      "status": "skip",
+      "message": "SENTRY_DSN not configured",
+      "timestamp": "2026-03-01T18:06:32.864Z"
+    }
+  ]
+}
