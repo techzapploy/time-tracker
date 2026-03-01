@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-03-01T22:10:30.004Z",
+  "results": [
+    {
+      "name": "postgres",
+      "status": "failed",
+      "message": "PostgreSQL connection failed: password authentication failed for user \"postgres\"",
+      "durationMs": 21
+    },
+    {
+      "name": "redis",
+      "status": "passed",
+      "message": "Connected to Redis successfully (redis)",
+      "durationMs": 23
+    },
+    {
+      "name": "discord",
+      "status": "skipped",
+      "message": "DISCORD_WEBHOOK_URL and DISCORD_TOKEN are not set",
+      "durationMs": 0
+    },
+    {
+      "name": "github",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY is not set",
+      "durationMs": 0
+    },
+    {
+      "name": "sentry",
+      "status": "skipped",
+      "message": "SENTRY_DSN is not set",
+      "durationMs": 0
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 1,
+    "failed": 1,
+    "skipped": 5
+  }
+}
