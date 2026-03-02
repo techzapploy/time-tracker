@@ -56,3 +56,6 @@ __pycache__/
 .eslintcache
 .stylelintcache
 *.tsbuildinfo
+
+# Integration test reports
+DailyIntegrationTestResult/*.json
