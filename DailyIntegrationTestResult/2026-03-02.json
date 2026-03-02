@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-03-02T06:05:59.744Z",
+  "overall": "ok",
+  "results": [
+    {
+      "name": "PostgreSQL",
+      "status": "ok",
+      "message": "Connected successfully to postgres:5432",
+      "durationMs": 22
+    },
+    {
+      "name": "Redis",
+      "status": "ok",
+      "message": "Connected successfully to redis:6379",
+      "durationMs": 6
+    },
+    {
+      "name": "Discord",
+      "status": "skipped",
+      "message": "DISCORD_TOKEN not set, skipping"
+    },
+    {
+      "name": "GitHub",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN not set, skipping"
+    },
+    {
+      "name": "Linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY not set, skipping"
+    },
+    {
+      "name": "Render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY not set, skipping"
+    },
+    {
+      "name": "Sentry",
+      "status": "skipped",
+      "message": "SENTRY_DSN not set, skipping"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "ok": 2,
+    "failed": 0,
+    "skipped": 5
+  }
+}
