@@ -51,6 +51,7 @@ coverage/
 .nyc_output/
 .pytest_cache/
 __pycache__/
+DailyIntegrationTestResult/
 
 # Caching
 .eslintcache
