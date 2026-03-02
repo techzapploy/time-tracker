@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-02T16:06:15.742Z",
+  "date": "2026-03-02",
+  "totalChecks": 7,
+  "passed": 2,
+  "failed": 0,
+  "skipped": 5,
+  "results": [
+    {
+      "name": "PostgreSQL",
+      "status": "passed",
+      "message": "Connected to database \"postgres\" - PostgreSQL 16.13",
+      "durationMs": 175
+    },
+    {
+      "name": "Redis",
+      "status": "passed",
+      "message": "Connected to Redis 7.4.8 - PING: PONG",
+      "durationMs": 164
+    },
+    {
+      "name": "Discord",
+      "status": "skipped",
+      "message": "DISCORD_BOT_TOKEN not set - skipping Discord check",
+      "durationMs": 0
+    },
+    {
+      "name": "GitHub",
+      "status": "skipped",
+      "message": "GITHUB_TOKEN not set - skipping GitHub check",
+      "durationMs": 0
+    },
+    {
+      "name": "Linear",
+      "status": "skipped",
+      "message": "LINEAR_API_KEY not set - skipping Linear check",
+      "durationMs": 0
+    },
+    {
+      "name": "Render",
+      "status": "skipped",
+      "message": "RENDER_API_KEY not set - skipping Render check",
+      "durationMs": 0
+    },
+    {
+      "name": "Sentry",
+      "status": "skipped",
+      "message": "SENTRY_AUTH_TOKEN not set - skipping Sentry check",
+      "durationMs": 0
+    }
+  ]
+}
