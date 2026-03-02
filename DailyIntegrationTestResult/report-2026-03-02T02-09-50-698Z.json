@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-03-02T02:09:50.699Z",
+  "results": [
+    {
+      "name": "postgres",
+      "status": "pass",
+      "duration_ms": 25
+    },
+    {
+      "name": "redis",
+      "status": "pass",
+      "duration_ms": 20
+    },
+    {
+      "name": "discord",
+      "status": "skip",
+      "reason": "DISCORD_TOKEN not set",
+      "duration_ms": 0
+    },
+    {
+      "name": "github",
+      "status": "skip",
+      "reason": "GITHUB_TOKEN not set",
+      "duration_ms": 0
+    },
+    {
+      "name": "linear",
+      "status": "skip",
+      "reason": "LINEAR_API_KEY not set",
+      "duration_ms": 0
+    },
+    {
+      "name": "render",
+      "status": "skip",
+      "reason": "RENDER_API_KEY not set",
+      "duration_ms": 0
+    },
+    {
+      "name": "sentry",
+      "status": "skip",
+      "reason": "SENTRY_DSN not set",
+      "duration_ms": 0
+    }
+  ]
+}
