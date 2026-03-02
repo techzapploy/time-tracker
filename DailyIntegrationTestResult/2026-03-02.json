@@ -1,0 +1,44 @@
+[
+  {
+    "name": "postgres",
+    "status": "pass",
+    "message": "Connected and queried successfully",
+    "durationMs": 29
+  },
+  {
+    "name": "redis",
+    "status": "pass",
+    "message": "Connected and pinged successfully",
+    "durationMs": 22
+  },
+  {
+    "name": "discord",
+    "status": "skip",
+    "message": "DISCORD_BOT_TOKEN not set",
+    "durationMs": 0
+  },
+  {
+    "name": "github",
+    "status": "skip",
+    "message": "GITHUB_TOKEN not set",
+    "durationMs": 0
+  },
+  {
+    "name": "linear",
+    "status": "skip",
+    "message": "LINEAR_API_KEY not set",
+    "durationMs": 0
+  },
+  {
+    "name": "render",
+    "status": "skip",
+    "message": "RENDER_API_KEY not set",
+    "durationMs": 0
+  },
+  {
+    "name": "sentry",
+    "status": "skip",
+    "message": "SENTRY_AUTH_TOKEN or SENTRY_ORG not set",
+    "durationMs": 0
+  }
+]
