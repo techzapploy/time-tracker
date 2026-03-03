@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-03",
+  "results": [
+    {
+      "service": "postgres",
+      "status": "pass",
+      "message": "Connected and ran SELECT 1 successfully",
+      "duration": 319
+    },
+    {
+      "service": "redis",
+      "status": "pass",
+      "message": "Connected and PING returned PONG",
+      "duration": 310
+    },
+    {
+      "service": "discord",
+      "status": "skip",
+      "message": "DISCORD_WEBHOOK_URL not set",
+      "duration": 0
+    },
+    {
+      "service": "github",
+      "status": "skip",
+      "message": "GITHUB_TOKEN not set",
+      "duration": 0
+    },
+    {
+      "service": "linear",
+      "status": "skip",
+      "message": "LINEAR_API_KEY not set",
+      "duration": 0
+    },
+    {
+      "service": "render",
+      "status": "skip",
+      "message": "RENDER_API_KEY not set",
+      "duration": 0
+    },
+    {
+      "service": "sentry",
+      "status": "skip",
+      "message": "SENTRY_DSN not set",
+      "duration": 0
+    }
+  ]
+}
