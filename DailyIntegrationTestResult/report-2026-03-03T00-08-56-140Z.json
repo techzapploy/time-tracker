@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-03-03T00:08:56.140Z",
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "skipped": 5,
+    "total": 7
+  },
+  "results": [
+    {
+      "service": "postgres",
+      "status": "pass",
+      "message": "Connected and SELECT 1 succeeded",
+      "durationMs": 26
+    },
+    {
+      "service": "redis",
+      "status": "pass",
+      "message": "Connected and PING returned PONG",
+      "durationMs": 22
+    },
+    {
+      "service": "discord",
+      "status": "skip",
+      "message": "DISCORD_WEBHOOK_URL and DISCORD_TOKEN are not set"
+    },
+    {
+      "service": "github",
+      "status": "skip",
+      "message": "GITHUB_TOKEN is not set"
+    },
+    {
+      "service": "linear",
+      "status": "skip",
+      "message": "LINEAR_API_KEY is not set"
+    },
+    {
+      "service": "render",
+      "status": "skip",
+      "message": "RENDER_API_KEY is not set"
+    },
+    {
+      "service": "sentry",
+      "status": "skip",
+      "message": "SENTRY_DSN is not set"
+    }
+  ]
+}
